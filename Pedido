@@ -1,0 +1,35 @@
+public class Pedidos extends Pratos {
+	public int quantidade_pedido;
+	private int IdPedido;
+	
+	
+	public void Pratos() {
+		
+	}
+	
+	public Pedidos() {
+		
+	}
+	
+	public Pedidos(int quantidade_pedido,int IdPedido) {
+		this.quantidade_pedido = quantidade_pedido;
+		this.IdPedido = IdPedido;
+	}
+	
+	
+	
+	public int getquantidade_pedido() {
+		return quantidade_pedido;
+	}
+	public void setquantiade_pedido(int quantidade_pedido) {
+		this.quantidade_pedido = quantidade_pedido;
+	}
+	
+	public int getIdpedido() {
+		return IdPedido;
+	}
+	public void setIdPedido(int IdPedido) {
+		this.IdPedido = IdPedido;
+	}
+	
+}
