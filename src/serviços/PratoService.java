@@ -1,6 +1,6 @@
 package serviços;
 
-import prorestaurante.Pratos;
+import entidades.Prato;
 import repositorios.PratoRepository;
 
 public class PratoService {
@@ -10,13 +10,17 @@ public class PratoService {
 		this.repository = repository;
 	}
 	
-	public void salvarprato (Pratos prato) {
-		repository.adicionarfila(prato);
+	public void enfileirar (Prato prato) {
+		repository.enfileirar(prato);
 	}
-	public void RemoverPrato() {
-		repository.removerfila();
+	public void desfileirar() {
+		repository.desfileirar();
 	}
-	public Pratos VerPedido() {
+	public Prato VerPedido() {
 		return repository.getproximoPedido();
 	}
+	public boolean atualizarPrato(int numPedido, String novoNome, double novoPreco) {
+        return repository.atualizarPratoPorId(numPedido, novoNome, novoPreco);
+    }
+
 }

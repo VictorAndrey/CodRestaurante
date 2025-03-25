@@ -1,7 +1,7 @@
 package serviços;
 
-import prorestaurante.Funcionario;
-import prorestaurante.Pessoa;
+import entidades.Funcionario;
+import entidades.Pessoa;
 import repositorios.FuncionarioRepository;
 
 public class FuncionarioService {

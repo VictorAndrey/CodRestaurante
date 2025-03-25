@@ -1,7 +1,7 @@
 package repositorios;
 import java.util.ArrayList;
 
-import prorestaurante.Funcionario;
+import entidades.Funcionario;
 
 public class FuncionarioRepository {
 	private ArrayList<Funcionario> funcionarios;
